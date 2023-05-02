@@ -1,0 +1,46 @@
+.popular-goods-container {
+  margin-top: 70px;
+  .title-text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .filter-btns {
+    margin-top: 27px;
+    width: 100%;
+    display: flex;
+    font-weight: 500;
+    justify-content: space-between;
+    div {
+      :nth-child(1) {
+        width: 138px;
+        height: 51px;
+      }
+      :nth-child(2),
+      :nth-child(3) {
+        margin-left: 20px;
+        width: 173px;
+        height: 51px;
+        background-color: white;
+      }
+    }
+
+    .all-category {
+      width: 191px;
+      height: 51px;
+      background-color: white;
+    }
+  }
+
+  .All-products {
+    margin-top: 40px;
+    display: flex;
+    column-gap: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+  }
+}
+
+

@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Roboto+Mono:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+body {
+  background: #ffffff;
+}
+
+.button {
+  width: 186px;
+  height: 48px;
+  background: #d9d9d9;
+  border: 2px solid #dd0e1d;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+img {
+  background-position: center;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.product-card {
+  width: 226px;
+  height: 294px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  .product-img {
+    width: 100%;
+    height: 150px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background-position: center;
+      border-radius: 10px;
+    }
+  }
+
+  .text {
+    font-size: 18px;
+  }
+  .price {
+    font-size: 20px;
+  }
+}
+
+.title-p {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.page-pagination {
+  margin-top: 40px;
+  
+}

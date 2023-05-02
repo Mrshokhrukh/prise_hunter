@@ -1,0 +1,192 @@
+.foo-ffer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.foo-catalogue {
+  width: 100%;
+  position: relative;
+  .foo-params {
+    margin-top: 25px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 3%;
+  }
+}
+
+.foo-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.foo-item {
+  position: relative;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 34px;
+  font-weight: 500;
+  padding: 30px 0;
+
+  .foo-text {
+    position: absolute;
+    left: 2%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button {
+    position: absolute;
+    right: 1%;
+    width: 10rem;
+    height: 44px;
+    background: #dd0e1d;
+    border-radius: 22px;
+    font-size: 0.9rem;
+    border: none;
+    color: white;
+  }
+}
+
+.foo-show {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  cursor: pointer;
+  h4 {
+    font-weight: 500;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 1.1rem;
+
+    span {
+      position: relative;
+      top: 3%;
+    }
+  }
+}
+
+.foo-btn {
+  width: 100%;
+  display: none;
+  justify-content: center;
+}
+
+#foo-btn {
+  width: 80%;
+  height: 46px;
+  background: #d9d9d9;
+  border-radius: 22px;
+  border: 2px solid rgba(221, 14, 29, 1);
+  margin: 25px 0;
+}
+
+.foo-card {
+  position: relative;
+  margin: auto;
+  width: 60%;
+  height: 350px;
+  border: 1px solid rgba(221, 14, 29, 0.3);
+  border-radius: 34px;
+  display: none;
+  justify-content: space-around;
+  // align-items: center;
+  .foo-left,
+  .foo-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .foo-right {
+    font-weight: 500;
+  }
+
+  button {
+    position: absolute;
+    width: 90%;
+    height: 45px;
+    bottom: 5%;
+    background: #dd0e1d;
+    border: none;
+    outline: none;
+    border-radius: 22px;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 700px) {
+  .foo-offer {
+    position: relative;
+  }
+  .foo-offer,
+  .foo-items {
+    width: 100%;
+  }
+
+  .foo-items {
+    gap: 25px;
+  }
+
+  .foo-items {
+    align-items: center;
+  }
+}
+
+@media (max-width: 670px) {
+  .foo-offer {
+    h3,
+    h4 {
+      font-size: 1.5rem;
+    }
+  }
+  .foo-show,
+  .foo-catalogue,
+  .foo-item {
+    display: none;
+  }
+
+  .foo-btn {
+    display: flex;
+  }
+
+  .foo-card {
+    display: flex;
+    width: 80%;
+    height: 250px;
+    .foo-left,
+    .foo-right,
+    button {
+      font-size: 1rem;
+    }
+    .foo-btn {
+      #foo-btn {
+        width: 90%;
+      }
+    }
+
+    button {
+      width: 80%;
+      height: 40px;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .foo-card {
+    width: 100%;
+  }
+  #foo-btn {
+    width: 100%;
+  }
+}

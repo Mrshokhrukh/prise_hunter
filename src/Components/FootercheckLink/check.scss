@@ -1,0 +1,176 @@
+.checkLink {
+  margin-top: 175px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  .bottom-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+    width: 346px;
+    // height: 264px;
+
+    p {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      color: #494949;
+    }
+    span {
+      color: #494949;
+      font-weight: 500;
+      font-size: 20px;
+    }
+    .link-img {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      height: 50px;
+      img {
+        width: 150px;
+      }
+    }
+  }
+  .bottom-center {
+    display: flex;
+    justify-content: center;
+    // margin-top: -50px;
+  }
+  .bottom-left {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    font-size: 18px;
+    width: 350px;
+  }
+}
+
+// .bottom {
+//   width: 100%;
+//   // height: 500px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+
+// .stores {
+//   width: 33%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-evenly;
+//   gap: 25px;
+//   align-items: flex-start;
+//   а h3 {
+//     font-weight: 700;
+//     font-size: 1.8rem;
+//     line-height: 135.8%;
+//   }
+
+//   p {
+//     font-size: 1.2rem;
+//     line-height: 1.8rem;
+//     font-style: normal;
+//     font-weight: 500;
+//   }
+
+//   .card {
+//     width: 100%;
+//     // background-color: red;
+//     display: flex;
+//     justify-content: flex-start;
+//     gap: 10px;
+//   }
+// }
+
+// .store {
+//   width: 50%;
+//   height: 60px;
+//   background-color: #000000;
+//   display: flex;
+//   padding: 0 20px;
+//   align-items: center;
+//   gap: 10px;
+//   color: white;
+//   border-radius: 6px;
+
+//   .title {
+//     display: flex;
+//     flex-direction: column;
+//     p {
+//       font-style: normal;
+//       font-weight: 500;
+//       font-size: 0.8rem;
+//       line-height: 1rem;
+//     }
+
+//     h5 {
+//       font-style: normal;
+//       font-weight: 500;
+//       font-size: 0.8rem;
+//       line-height: 1.6rem;
+//     }
+//   }
+// }
+
+// .qr_code {
+//   width: 33%;
+//   display: flex;
+//   justify-content: space-evenly;
+//   height: 350px;
+//   align-items: center;
+
+//   h4 {
+//     width: 50%;
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 1.1rem;
+//     line-height: 135.8%;
+//   }
+
+//   .qrImg {
+//     width: 164px;
+//     height: 164px;
+//     background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png)
+//       no-repeat center center;
+//     background-size: cover;
+//   }
+// }
+
+// .img {
+//   width: 33.3%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   transform: translateZ(60px);
+//   cursor: pointer;
+// }
+
+// @media (max-width: 1150px) {
+//   .bottom {
+//     gap: 30px;
+//   }
+
+//   .store {
+//     width: 192px;
+//   }
+// }
+// @media (max-width: 1050px) {
+//   .bottom {
+//     justify-content: space-between;
+//   }
+//   .img {
+//     display: none;
+//   }
+
+//   .qr_code,
+//   .stores {
+//     width: 45%;
+//   }
+// }

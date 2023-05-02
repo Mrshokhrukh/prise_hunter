@@ -1,0 +1,51 @@
+.Brands {
+  margin-top: 160px;
+
+  .brand-text {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .logo-boxes {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    .logo-brands {
+      width: 210px;
+      height: 192px;
+      border: 1px solid #dd0e1d;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      row-gap: 30px;
+      transition: 500ms;
+
+      img {
+        z-index: 3;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+        background-size: center;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 19px;
+      }
+    }
+   
+  }
+}
+
+@media (max-width: 901px) {
+  .Brands {
+    .logo-boxes {
+      justify-content: center;
+    }
+  }
+}

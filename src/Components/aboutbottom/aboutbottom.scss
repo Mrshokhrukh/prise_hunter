@@ -1,0 +1,88 @@
+.aboutBottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 50px 0;
+  }
+  
+  .aboutBottom-chart {
+    width: 60%;
+    height: 400px;
+  }
+  
+  .aboutBottom-container {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+  
+    button {
+      width: 11rem;
+      height: 48px;
+    
+    }
+  
+  }
+  
+  .aboutBottom-range {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    h3 {
+      line-height: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .aboutBottom-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 30px;
+      height: auto;
+    }
+  
+    .aboutBottom-chart {
+      width: 100%;
+    }
+  
+    .aboutBottom-range {
+      width: 100%;
+      button {
+        width: 30%;
+        height: 50px;
+      }
+    }
+  
+    .aboutBottom-price {
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .aboutBottom-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      // height: auto;
+      justify-content: space-between;
+      height: 100%;
+    }
+  
+    .aboutBottom-chart {
+      width: 100%;
+      height: 250px;
+    }
+  
+    .aboutBottom-range {
+      width: 100%;
+      button {
+        width: 100%;
+        height: 48px;
+      }
+    }
+  }

@@ -1,0 +1,193 @@
+.searchpage-top {
+    width: 95%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    align-items: center;
+  }
+  
+  .result,
+  .selects {
+    // width: 50%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  .selects {
+    justify-content: space-between;
+  }
+  
+  .result p {
+    text-transform: capitalize;
+  }
+  
+  .select,
+  #two {
+    // width: 40%;
+    border: 1px solid #dd0e1d;
+    border-radius: 30px;
+    display: flex;
+    width: 271px;
+    height: 50px;
+    align-items: center;
+  
+    .price {
+      width: 50%;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    select {
+      width: 55%;
+      height: 100%;
+      border: none;
+      outline: none;
+      text-transform: capitalize;
+    }
+  
+    .category {
+      width: 40%;
+      height: 101%;
+      font-size: 14px;
+      background: #d9d9d9;
+      border: 1px solid #dd0e1d;
+      border-radius: 25.5px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  #two {
+    width: 379px;
+    position: relative;
+    span {
+      position: relative;
+      left: 5%;
+      font-size: 1rem;
+    }
+    select {
+      width: 50%;
+    }
+  }
+  
+  .result {
+    // width: 40%;
+    gap: 10px;
+    height: 30%;
+  }
+  
+  @media (max-width: 1080px) {
+    .top {
+      justify-content: flex-start;
+    }
+  
+    .result {
+      font-size: 1.2rem;
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  
+    .selects {
+      width: 100%;
+    }
+  
+    .select,
+    #two {
+      width: 50%;
+  
+      select {
+        width: 70%;
+        font-size: 0.9rem;
+      }
+  
+      span {
+        left: 15%;
+      }
+    }
+  
+    .category {
+      width: 30%;
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  
+  @media (max-width: 736px) {
+    .top {
+      width: 100%;
+      margin: auto;
+    }
+    .result {
+      width: 100%;
+      margin: auto;
+    }
+    .selects {
+      width: 100%;
+      margin: auto;
+      flex-wrap: wrap;
+  
+      .select,
+      #two {
+        width: 100%;
+        .price {
+          width: 58%;
+        }
+  
+        span {
+          left: 20%;
+          font-size: 1.2rem;
+        }
+  
+        select {
+          font-size: 1.2rem;
+        }
+      }
+      select {
+        width: 58%;
+      }
+  
+      select {
+        font-size: 1.1rem;
+      }
+    }
+  
+    .category {
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .top {
+      width: 100%;
+      .selects,
+      .result {
+        width: 100%;
+      }
+    }
+    #two .price {
+      span {
+        display: none;
+      }
+    }
+  
+    #two select {
+      width: 100%;
+    }
+  
+    .select select {
+      background: none;
+      font-size: 1.2rem;
+    }
+  
+    .select p {
+      font-size: 1.2rem;
+    }
+  }

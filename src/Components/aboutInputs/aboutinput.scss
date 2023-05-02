@@ -1,0 +1,154 @@
+.about-inputs {
+  width: 100%;
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  margin: 50px auto;
+
+  input {
+    outline: none;
+  }
+
+  label {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 126%;
+    gap: 10px;
+
+    input,
+    select {
+      width: 90%;
+      height: 50px;
+    }
+  }
+  .input {
+    position: relative;
+    width: 100%;
+    height: 50px;
+
+    input {
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      border: none;
+      outline: none;
+      padding: 0 5px;
+    }
+
+    button {
+      width: 25%;
+      height: 50.1px;
+      top: 0;
+      margin: auto;
+      right: 0;
+      bottom: 0;
+      font-size: 10px;
+      position: absolute;
+      border-radius: 30px;
+      font-size: 0.7rem;
+    }
+
+    .sum {
+      position: absolute;
+      height: 50.1px;
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 0;
+      border-radius: 25.5px;
+      border: 2px solid red;
+    }
+  }
+
+  .input,
+  #email {
+    border: 2px solid #dd0e1d;
+    border-radius: 25.5px;
+    padding: 0 20px;
+  }
+
+  .input {
+    border-left: none;
+    border-right: none;
+  }
+}
+
+@media (max-width: 1010px) {
+  .about-inputs {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20% 0;
+
+    label {
+      width: 90%;
+      font-size: 1rem;
+      padding: 0 20px;
+
+      input,
+      select {
+        width: 100%;
+      }
+
+      input:focus,
+      select:focus {
+        outline: none;
+      }
+    }
+
+    .input {
+      button,
+      .sum {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .about-inputs {
+    label {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .about-inputs {
+    margin-top: 120px;
+    label {
+      width: 100%;
+      padding: 0;
+    }
+    .input {
+      .sum {
+        display: none;
+      }
+
+      button {
+        width: 30%;
+        font-size: 1.1rem;
+      }
+
+      input {
+        right: 20%;
+        width: 60%;
+        margin: none;
+      }
+    }
+  }
+}

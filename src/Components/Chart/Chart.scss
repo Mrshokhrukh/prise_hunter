@@ -1,0 +1,38 @@
+.chart {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  .chart-title {
+    font-weight: 700;
+  }
+
+  .bar-chart-right {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 120px;
+  }
+
+  .slider-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 18px;
+  }
+
+  .btn-alishop {
+    width: 208px;
+    height: 48px;
+    background: #d9d9d9;
+    border: 2px solid #dd0e1d;
+    border-radius: 30px;
+    font-size: 18px;
+  }
+}
+.chart{
+  flex-direction: column;
+  row-gap: 25px;
+  .bar-chart-right{
+    width: 100%;
+  }
+}

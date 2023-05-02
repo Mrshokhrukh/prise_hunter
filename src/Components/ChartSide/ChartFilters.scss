@@ -1,0 +1,70 @@
+.Chart-Filters {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-size: 18px;
+  
+  .box {
+    height: 40px;
+    width: 350px;
+    background: #ffffff;
+    border: 1px solid rgba(221, 14, 29, 0.3);
+    border-radius: 30px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .box-1 {
+    input {
+      width: 93%;
+      height: 100%;
+      border-radius: 30px;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      margin-left: 15px;
+    }
+  }
+  .box-2 {
+    position: relative;
+    p {
+      margin-left: 15px;
+    }
+    .downOutlined {
+      position: absolute;
+      right: 15px;
+    }
+  }
+  .box-3 {
+    display: flex;
+
+    span {
+      display: flex;
+      background: #d9d9d9;
+      border: 1px solid #dd0e1d;
+      border-radius: 30px;
+      width: 50px;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+    input {
+      height: 100%;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      width: 55%;
+      margin-left: 10px;
+    }
+    button {
+      border: 1px solid rgba(221, 14, 29, 0.3);
+      border-radius: 30px;
+      height: 100%;
+      width: 100px;
+      background-color: white;
+    }
+  }
+
+}

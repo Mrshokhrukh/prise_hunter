@@ -1,0 +1,69 @@
+.hamburger {
+  display: none;
+  cursor: pointer;
+  div {
+    width: 26px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+  }
+}
+
+.links {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  height: 80%;
+  .closer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  .link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50%;
+    p {
+      cursor: pointer;
+    }
+    p:active {
+      color: #ebe9e9;
+    }
+  }
+
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    button {
+      width: 228px;
+      height: 50px;
+    }
+
+    button:active {
+      background: #ebe9e9;
+    }
+
+    .btn-1 {
+      border: none;
+      background: #d9d9d9;
+      border-radius: 30px;
+    }
+
+    .btn-2 {
+      border: 1px solid #000000;
+      border-radius: 30px;
+    }
+  }
+}
+@media (max-width: 1201px) {
+  .hamburger {
+    display: block;
+  }
+}

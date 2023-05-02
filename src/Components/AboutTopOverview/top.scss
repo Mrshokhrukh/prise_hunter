@@ -1,0 +1,189 @@
+.about-top {
+  width: 100%;
+}
+
+.aboutTop-card {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-start;
+  height: 298px;
+  img {
+    width: 441px;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  // height: 280px;
+  button {
+    width: 10rem;
+    height: 3rem;
+    margin: 0 10%;
+  }
+}
+
+.aboutTop-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .aboutTop-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+
+  .aboutTop-about {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .aboutTop-category {
+      display: flex;
+      gap: 30px;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  .aboutTop-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 90%;
+  }
+}
+
+.aboutTop-inner {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: end;
+  justify-content: space-between;
+  height: 100%;
+  span {
+    font-size: 2rem;
+  }
+  .aboutTop-price {
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .aboutTop-top {
+    img {
+      width: 30%;
+      height: 80%;
+    }
+  }
+
+  .aboutTop-card {
+    gap: 10px;
+  }
+
+  .aboutTop-wrapper {
+    height: 80%;
+  }
+}
+
+@media (max-width: 901px) {
+  .aboutTop-card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+ 
+    height: 500px;
+    img {
+      width: 80%;
+      height: 50%;
+    }
+  }
+
+  .aboutTop-wrapper {
+    width: 80%;
+    position: relative;
+
+  
+
+    
+  }
+
+  .aboutTop-wrapper .aboutTop-about .aboutTop-category {
+    display: none;
+  }
+
+  .aboutTop-wrapper button,
+  .aboutTop-card .aboutTop-text,
+  .aboutTop-inner .aboutTop-price h4 {
+    position: absolute;
+    font-size: 1.2rem;
+  }
+  .aboutTop-wrapper button {
+    width: 90%;
+    bottom: 30%;
+    height: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 1.2rem;
+  }
+  .aboutTop-card .aboutTop-text {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    bottom: 0%;
+  }
+
+  .aboutTop-inner .aboutTop-price p {
+    font-size: 1.1rem;
+  }
+
+  .aboutTop-inner .aboutTop-price h4 {
+    left: 0%;
+  }
+}
+
+@media (max-width: 460px) {
+  .aboutTop-card img,
+  .aboutTop-wrapper {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .aboutTop-card {
+    height: 440px;
+  }
+  .aboutTop-wrapper {
+
+    font-size: 12.5px;
+  }
+  .aboutTop-price{
+    h4{
+      margin-top: 20px;
+    }
+  }
+  .aboutTop-info{
+    h3{
+      font-size: 14px;
+    }
+  }
+  .aboutTop-text {
+  font-size: 12px;
+  }
+}

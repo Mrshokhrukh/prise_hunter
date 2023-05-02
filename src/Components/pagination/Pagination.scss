@@ -1,0 +1,41 @@
+.pagination {
+  width: 311px;
+  height: 56px;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid #dd0e1d;
+  border-radius: 28px;
+  align-items: center;
+  transition: 1s;
+  margin-top: 5%;
+
+  @media (max-width: 503px) {
+    width: 219px;
+    height: 46px;
+  }
+
+  span {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 31px;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+
+    @media (max-width: 510px) {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .page-pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,47 @@
+.home-btns-line {
+  margin-top: 27px;
+  width: 100%;
+  display: flex;
+  font-weight: 500;
+  justify-content: space-between;
+  align-items: center;
+
+  .left-btns {
+    display: flex;
+    gap: 20px;
+    .button-all-prdc-link {
+      width: 138px;
+      height: 51px;
+    }
+    .button-price,
+    :nth-child(3) {
+      width: 173px;
+      height: 51px;
+    }
+  }
+  .right-category {
+    width: 191px;
+    height: 51px;
+  }
+}
+
+@media (max-width: 820px) {
+  .home-btns-line {
+    flex-direction: column;
+    row-gap: 20px;
+    .left-btns {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      background-color: rebeccapurple;
+      button{
+        width: 50%;
+
+
+      }
+    }
+    .right-category {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.footer {
+  background: #8f8f8fad;
+ margin-top: 20px;
+  .inner {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 70px 0;
+  }
+
+  .documents {
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5rem;
+    h3 {
+      color: #4e4e4e;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+    ul {
+      list-style-type: none;
+      color: #ffffff;
+
+      li {
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .inner {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .inner {
+    width: 60%;
+    height: 70%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
